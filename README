@@ -1,0 +1,51 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2458
+
+The script draws line boxes in styles in various languages.
+
+You can get all kinds of lines supported in your local system.  For Chinese, Japanese, and Korean (CJK), the program will be fully featured with various pre-defined lines.  Other encoding will have degraded lines.  For example, if you have not 3-dot line in your system, a solid line will be used.  In the worst case, characters (+,-,|) will be applied.
+
+In case a visual selection cover an existing box, there are 2 modes for processing the intersection, unite mode and overwrite mode.  In unite mode, lines are joined at intersections. This is why the script is call unibox..
+
+Key mappings:
+
+    <leader>du    uses it after you change you encoding
+    <leader>d     the default draw mode, same as <leader>d1
+    <leader>d1    draws with thin lines
+    <leader>d2     with bold lines
+    <leader>d3     with 3-dot thin lines
+    <leader>d4     with 4-dot thin lines
+    <leader>d5     with double lines
+    <leader>d6     with 3-dot bold lines
+    <leader>dr     sam as <leader>dr1
+    <leader>dr1    with round corners and thin lines
+    <leader>dr3    with round corners and 3-dot thin lines
+    <leader>dr4    with round corners and 4-dot thin lines
+    <leader>d8     with round corners and 4-dot bold lines
+    <leader>dc    clear the box
+
+    <leader>dd    The followings correspond the above but in a overwrite mode
+    <leader>dd1   
+    <leader>dd2   
+    <leader>dd3   
+    <leader>dd4   
+    <leader>dd5   
+    <leader>dd6   
+    <leader>ddr   
+    <leader>ddr1  
+    <leader>ddr3  
+    <leader>ddr4  
+    <leader>dd8   
+    <leader>ddC  
+
+Tips:
+
+1.Try the following if you encounter wierd lines:
+        set ambiwith=single
+  or   set ambiwith=double
+
+2.To change the encoding, use
+        set enc=...
+  and type
+        <leader>du
+  to reset the drawing system.
+
